@@ -55,7 +55,7 @@ print(groups)
 
 df = pd.DataFrame(groups)
 df.columns = ['Groups']
-
+df.to_csv("result.csv", index=False)
 from collections import Counter
 a = dict(Counter(groups))
 a
